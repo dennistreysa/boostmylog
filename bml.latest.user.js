@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name Boost My Log
 // @author dennistreysa
-// @version 0.0.1.14
+// @version 0.0.1.15
 // @copyright 2016, dennistreysa
 // @icon https://raw.githubusercontent.com/dennistreysa/boostmylog/master/res/icon.png
 // @description This script boosts your log with nonprintable characters that will count as a word, so you don't have to write any unnecessary bullshit anymore!
 // @updateURL https://raw.githubusercontent.com/dennistreysa/boostmylog/master/bml.latest.user.js
 // @downloadURL https://raw.githubusercontent.com/dennistreysa/boostmylog/master/bml.latest.user.js
 // @include *geocaching.com/seek/log.aspx?ID=*
+// @include *geocaching.com/seek/log.aspx?LUID=*
 // @noframes
 // ==/UserScript==
 
