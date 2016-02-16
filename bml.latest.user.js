@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Boost My Log
 // @author dennistreysa
-// @version 0.0.1.13
+// @version 0.0.1.14
 // @copyright 2016, dennistreysa
 // @icon https://raw.githubusercontent.com/dennistreysa/boostmylog/master/res/icon.png
 // @description This script boosts your log with nonprintable characters that will count as a word, so you don't have to write any unnecessary bullshit anymore!
@@ -42,9 +42,10 @@ if($){
 								
 								$textarea.val(text);
 
-								// Trigger change event
-								$textarea.trigger("change");
-								$textarea.trigger("keyup");
+								// Trigger keyup event
+								var keyupEvent = new Event('keyup');
+								var textarea = document.getElementById('ctl00_ContentBody_LogBookPanel1_uxLogInfo');
+								textarea.dispatchEvent(keyupEvent);
 
 								var $message = $("<div/>", {html:"Log successfully boosted by "+remaining+" words ;)"});
 
