@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Boost My Log
 // @author dennistreysa
-// @version 0.0.1.15
+// @version 0.0.1.16
 // @copyright 2016, dennistreysa
 // @icon https://raw.githubusercontent.com/dennistreysa/boostmylog/master/res/icon.png
 // @description This script boosts your log with nonprintable characters that will count as a word, so you don't have to write any unnecessary bullshit anymore!
@@ -24,8 +24,8 @@ if($){
 		var $button = $("#ctl00_ContentBody_LogBookPanel1_btnSubmitLog");
 		
 		// create new button
-		var $booster = $('<button/>', {
-							text: "Boost My Log! 😈",
+		var $booster = $('<input/>', {
+							value: "Boost My Log! 😈",
 							id: 'bml_btn',
 							class: "Button",
 							click: function (e) {
