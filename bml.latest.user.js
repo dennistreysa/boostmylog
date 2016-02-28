@@ -26,6 +26,7 @@ if($){
 		// create new button
 		var $booster = $('<input/>', {
 							value: "Boost My Log! 😈",
+							type: "submit",
 							id: 'bml_btn',
 							class: "Button",
 							click: function (e) {
